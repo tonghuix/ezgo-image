@@ -30,19 +30,19 @@ installpackages+="vim vim-gtk zenity im-switch chromium-browser language-pack-zh
 # fcitx
 installpackages+="fcitx-chewing fcitx-googlepinyin fcitx-table-array30 fcitx-table-array30-big fcitx-table-cangjie3 fcitx-table-cangjie5 fcitx-table-boshiamy fcitx-tools "
 # sigil, kazam, blender, and ffdiaporama
-installpackages+="sigil kazam blender ffdiaporama "
+installpackages+="sigil kazam ffdiaporama "
 # kdegames
-installpackages+="supertux supertuxkart pingus tuxmath tuxtype "
+installpackages+="supertux pingus tuxmath tuxtype "
 # office
-installpackages+="scribus dia planner gnucash calibre pdfshuffler qtqr scribus-template dia-shapes "
+installpackages+="dia planner gnucash calibre pdfshuffler qtqr dia-shapes "
 # edu
-installpackages+="gcompris ktuberling anki parley kanagram marble kgeography stellarium kmplot geogebra rocs rkward r-base-core gnumeric kalzium bkchem avogadro "
+installpackages+="arduino gcompris ktuberling anki parley kanagram marble kgeography stellarium kmplot geogebra rocs rkward r-base-core gnumeric kalzium bkchem avogadro "
 # painting
-installpcakages+="kolourpaint4 krita inkscape gimp imagemagick gwenview digikam ksnapshot shutter freecad fritzing kruler kcolorchooser "
+installpcakages+="kolourpaint4 inkscape gimp imagemagick gwenview digikam ksnapshot fritzing kruler kcolorchooser "
 # video/audio
-installpackages+="vlc openshot kdenlive kazam guvcview ffdiaporama k3b brasero furiusisomount amarok musescore tuxguitar hydrogen audacity lmms rosegarden kmix ardour "
+installpackages+="vlc openshot kdenlive kazam k3b furiusisomount amarok musescore hydrogen audacity lmms kmix "
 # networking
-installpackages+="filezilla gftp ktorrent sylpheed bluedevil krdc sylpheed-i18n "
+installpackages+="ktorrent sylpheed bluedevil krdc sylpheed-i18n "
 # games
 installpackages+="tuxtype tuxmath palapeli kubrick ksquares knetwalk ksudoku blinken picmi katomic kblackbox kigo kreversi kfourinline bovo gnugo "
 # wine
@@ -58,6 +58,5 @@ sync;sync;sync
 	$KERNELARGS \
 	-p "$installpackages" \
 	-f wrapper-ezgo.sh \
-	-f xmind_installer \
 	-f ezgo \
 	-c wrapper-ezgo.sh
